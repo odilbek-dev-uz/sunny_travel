@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-VariableFont_opsz\wght.ttf);
+  }
+  @font-face {
+    font-family: "Mul";
+    src: url(../fonts/Mulish-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: "Play";
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+  }
+
+  @mixin fonts ($font, $fw, $fs, $lh ) {
+    font-family: $font;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+  }
+  @mixin flex( $spbet, $cen, $fd){
+      display: flex;
+      justify-content: $spbet;
+      align-items: $cen;
+      flex-direction: $fd;
+  }
+  @mixin border($bor, $col, $w){
+      border: $w solid;
+      border-color: $col;
+      border-radius: $bor;
+  
+  }
+  @mixin grid($gr-col, $gr-row){
+      display: grid;
+      grid-template-columns: $gr-col;
+      grid-template-rows: $gr-row;
+  }
+
+$main: #ffffff;
+$logo1: #1abe84;
+$logo2: #fb8f1d;
+$w: #202336;
+$button: #fb8f1d;
+$txt_bg2: #000000;
+$txt_bg3: #7D7987;
+$footer: #F9F9FB;
